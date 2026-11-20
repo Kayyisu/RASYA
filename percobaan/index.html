@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilihan Mimin - Katalog Laptop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="container-fluid px-4 py-4">
+
+    <!-- BAR INTERAKTIF: Filter Tier, Pencarian, & Penghitung Favorit -->
+    <header class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+      <div class="d-flex flex-wrap gap-2">
+        <button type="button" class="btn-filter aktif" data-filter="all">Semua (4)</button>
+      </div>
+
+      <div class="d-flex align-items-center gap-3">
+        <input type="search" id="cariLaptop" class="input-cari" placeholder="Cari laptop / spek...">
+        <span class="badge-favorit">♥ Favorit: <b id="jumlahFavorit">0</b></span>
+      </div>
+    </header>
+
+    <!-- Pesan jika pencarian tidak ditemukan -->
+    <p id="pesanKosong" class="text-center text-secondary d-none my-5">
+      Laptop tidak ditemukan. Coba kata kunci lain.
+    </p>
+
+    <!-- GRID 4 KARTU LAPTOP -->
+    <section class="row g-3" aria-label="Katalog Laptop Pilihan Mimin">
+
+      <!-- KARTU 1 -->
+      <div class="col-12 col-md-6 col-lg-3 item-laptop" data-tier="Tier A+">
+        <article class="kartu">
+          <div class="foto">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=80" alt="HP Pavilion x360 14">
+            <span class="badge-kiri ungu">Tier A+</span>
+            <span class="badge-kanan baru">BARU</span>
+          </div>
+          <div class="isi">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="mimin mb-0">PILIHAN MIMIN</p>
+              <button type="button" class="btn-love" title="Simpan ke Favorit">♡</button>
+            </div>
+            <h2 class="judul">HP Pavilion x360 14</h2>
+            <ul class="spek">
+              <li>Intel Core 5 120U</li>
+              <li>Intel Graphics</li>
+              <li>16GB DDR4 · 512GB SSD</li>
+              <li>Garansi Resmi 2 Tahun</li>
+            </ul>
+            <p class="harga">Rp11.999.000</p>
+            <div class="tombol">
+              <a href="https://www.youtube.com/results?search_query=HP+Pavilion+x360+14+review" target="_blank" rel="noopener noreferrer" class="btn-video">♪ Video</a>
+              <a href="https://shopee.co.id/search?keyword=HP%20Pavilion%20x360%2014" target="_blank" rel="noopener noreferrer" class="btn-shopee">Shopee ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- KARTU 2 -->
+      <div class="col-12 col-md-6 col-lg-3 item-laptop" data-tier="Tier A+">
+        <article class="kartu">
+          <div class="foto">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="MSI Thin 15 RTX 3050">
+            <span class="badge-kiri biru">Tier S+</span>
+            <span class="badge-kanan BARU">BARU</span>
+          </div>
+          <div class="isi">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="mimin mb-0">PILIHAN MIMIN</p>
+              <button type="button" class="btn-love" title="Simpan ke Favorit">♡</button>
+            </div>
+            <h2 class="judul">MSI Thin 15 RTX 3050</h2>
+            <ul class="spek">
+              <li>Intel Core i5-12450H</li>
+              <li>NVIDIA RTX 3050 4GB</li>
+              <li>16GB DDR4 · 512GB SSD</li>
+              <li>Garansi Resmi 2 Tahun</li>
+            </ul>
+            <p class="harga">Rp10.499.000</p>
+            <div class="tombol">
+              <a href="https://www.youtube.com/results?search_query=MSI+Thin+15+RTX+3050+review" target="_blank" rel="noopener noreferrer" class="btn-video">♪ Video</a>
+              <a href="https://shopee.co.id/search?keyword=MSI%20Thin%2015%20RTX%203050" target="_blank" rel="noopener noreferrer" class="btn-shopee">Shopee ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- KARTU 3 -->
+      <div class="col-12 col-md-6 col-lg-3 item-laptop" data-tier="Tier B">
+        <article class="kartu">
+          <div class="foto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzkgVkRJfXbAatPCAy4-rST3Y9Iq-xI_8c9Z0GSn3z4A&s=10" alt="ASUS Zenbook 14 OLED">
+ 
+            <span class="badge-kiri">Tier S+</span>
+            <span class="badge-kanan baru">BARU</span>
+          </div>
+          <div class="isi">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="mimin mb-0">PILIHAN MIMIN</p>
+              <button type="button" class="btn-love" title="Simpan ke Favorit">♡</button>
+            </div>
+            <h2 class="judul">ASUS Zenbook 14 OLED</h2>
+            <ul class="spek">
+              <li>AMD Ryzen AI 7</li>
+              <li>Radeon 880M + Ryzen AI</li>
+              <li>32GB LPDDR5X · 1TB SSD</li>
+              <li>Garansi Resmi 2 Tahun</li>
+            </ul>
+            <p class="harga">Rp16.499.000</p>
+            <div class="tombol">
+              <a href="https://www.youtube.com/results?search_query=ASUS+Zenbook+14+OLED+review" target="_blank" rel="noopener noreferrer" class="btn-video">♪ Video</a>
+              <a href="https://shopee.co.id/search?keyword=ASUS%20Zenbook%2014%20OLED" target="_blank" rel="noopener noreferrer" class="btn-shopee">Shopee ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- KARTU 4 -->
+      <div class="col-12 col-md-6 col-lg-3 item-laptop" data-tier="Tier A+">
+        <article class="kartu">
+          <div class="foto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbtq2MfGNsN7GN-7YEyN9Dapfcevh9JoHEp4pjnVeEqQ&s=10" alt="Advan Workplus Heritage">
+            <span class="badge-kiri ">Tier A</span>
+            <span class="badge-kanan BARU">BARU</span>
+          </div>
+          <div class="isi">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="mimin mb-0">PILIHAN MIMIN</p>
+              <button type="button" class="btn-love" title="Simpan ke Favorit">♡</button>
+            </div>
+            <h2 class="judul">Advan Workplus Heritage</h2>
+            <ul class="spek">
+              <li>AMD Ryzen 5 7535HS</li>
+              <li>Radeon 660M</li>
+              <li>16GB LPDDR5 · 512GB SSD</li>
+              <li>Garansi Resmi 1 Tahun</li>
+            </ul>
+            <p class="harga">Rp7.299.000</p>
+            <div class="tombol">
+              <a href="https://www.youtube.com/results?search_query=Advan+Workplus+Heritage+review" target="_blank" rel="noopener noreferrer" class="btn-video">♪ Video</a>
+              <a href="https://shopee.co.id/search?keyword=Advan%20Workplus%20Heritage" target="_blank" rel="noopener noreferrer" class="btn-shopee">Shopee 
+          </div>
+        </article>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

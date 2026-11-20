@@ -1,0 +1,186 @@
+body {
+  background-color: #7c868b;
+  color: #5e3f3f;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Bar Filter, Pencarian, & Favorit */
+.btn-filter {
+  background-color: #14181b;
+  color: #cbd5e1;
+  border: 1px solid #262c32;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-filter.aktif,
+.btn-filter:hover {
+  background-color: #14e87b;
+  color: #042b16;
+  border-color: #14e87b;
+}
+
+.input-cari {
+  background-color: #14181b;
+  color: #ffffff;
+  border: 1px solid #262c32;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  outline: none;
+}
+
+.input-cari:focus {
+  border-color: #458d68;
+}
+
+.badge-favorit {
+  background-color: #14181b;
+  border: 1px solid #262c32;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #14e87b;
+}
+
+/* Kartu Laptop (Persis seperti di foto) */
+.kartu {
+  background-color: #101315;
+  border: 1px solid #202529;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.kartu:hover {
+  transform: translateY(-4px);
+  border-color: #14e87b;
+}
+
+.foto {
+  position: relative;
+  height: 100px;
+}
+
+.foto img {
+  width: 50%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.badge-kiri,
+.badge-kanan {
+  position: absolute;
+  top: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.badge-kiri { left: 12px; }
+.badge-kanan { right: 12px; }
+
+.ungu { background-color: #4f46e5; color: #ffffff; }
+.biru { background-color: #2563eb; color: #ffffff; }
+.baru, .resmi { background-color: #064e3b; color: #34d399; }
+
+.isi {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.mimin {
+  font-size: 11px;
+  font-weight: bold;
+  color: #14e87b;
+  letter-spacing: 0.6px;
+}
+
+/* Tombol Love / Favorit */
+.btn-love {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn-love.disukai {
+  color: #ef4444;
+}
+
+.judul {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 6px 0 12px 0;
+}
+
+.spek {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px 0;
+  font-size: 12px;
+  color: #9ca3af;
+  flex-grow: 1;
+}
+
+.spek li {
+  margin-bottom: 5px;
+}
+
+.spek li::before {
+  content: "• ";
+  color: #14e87b;
+  font-weight: bold;
+}
+
+.harga {
+  font-size: 21px;
+  font-weight: bold;
+  color: #14e87b;
+  margin-bottom: 14px;
+}
+
+/* Tombol Video & Shopee */
+.tombol {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-video,
+.btn-shopee {
+  border-radius: 10px;
+  padding: 9px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.btn-video {
+  flex: 1;
+  background-color: #171a1d;
+  color: #e5e7eb;
+  border: 1px solid #2b3036;
+}
+
+.btn-shopee {
+  flex: 1.4;
+  background-color: #14e87b;
+  color: #042b16;
+}
+
+.btn-video:hover { background-color: #22272c; color: #ffffff; }
+.btn-shopee:hover { background-color: #10cf6c; color: #042b16; }

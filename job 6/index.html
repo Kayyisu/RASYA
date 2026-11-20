@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tier List Laptop Baru</title>
+  <!-- Menghubungkan ke file CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <h1 class="judul-utama">TIER LIST LAPTOP BY RASYA</h1>
+      <div class="badge-harga">MULAI 10 JUTAAN</div>
+      <p class="subjudul">Rekomendasi laptop baru garansi resmi sesuai budget dan kebutuhan</p>
+      <div class="info-update">
+        <span class="titik-hijau"></span>
+        <span>Stok & harga terakhir dicek: 19 November 2026</span>
+      </div>
+    </header>
+
+    <!-- FILTER & PENCARIAN -->
+    <div class="filter-box">
+      <button class="tombol-kategori aktif" onclick="filterKategori('Semua', this)">Semua</button>
+      <button class="tombol-kategori" onclick="filterKategori('Ultrabook', this)">Ultrabook</button>
+      <button class="tombol-kategori" onclick="filterKategori('Gaming', this)">Gaming</button>
+      <button class="tombol-kategori" onclick="filterKategori('2-in-1', this)">2-in-1</button>
+
+      <input type="text" id="inputCari" class="input-cari" placeholder="Cari laptop baru, prosesor, gaming, kuliah..." onkeyup="jalankanFilter()">
+
+      <select id="filterTier" class="select-filter" onchange="jalankanFilter()">
+        <option value="Semua">Tier</option>
+        <option value="Tier S">Tier S</option>
+        <option value="Tier A+">Tier S+</option>
+      </select>
+    </div>
+
+    <!-- INFO JUMLAH DATA -->
+    <div class="info-bar">
+      <div>
+        <strong>4 tersedia</strong>
+        <span class="teks-promo">2 promo</span>
+        <span class="teks-redup" id="infoTampil">(4 ditampilkan)</span>
+      </div>
+      <button class="tombol-bantu" onclick="bantuPilihin()">
+        ? Bantu pilihin
+      </button>
+    </div>
+
+    <!-- TEMPAT KARTU LAPTOP AKAN MUNCUL -->
+    <div class="grid-laptop" id="wadahLaptop"></div>
+  </div>
+
+  <!-- Menghubungkan ke file JavaScript -->
+  <script src="script.js"></script>
+  
+</body>
+</html>
